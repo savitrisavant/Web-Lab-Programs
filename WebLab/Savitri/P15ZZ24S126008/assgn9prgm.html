@@ -1,0 +1,394 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Registration Form - EMRS STAFF SELECTION</title> 
+    <style> 
+        /* Global Reset and Body Styling */ 
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 10px; 
+            background-color: #f4f4f4; 
+        } 
+ 
+        /* Header Styling */ 
+        .header-container { 
+            text-align: center; 
+            margin-bottom: 20px; 
+        } 
+ 
+        .header-container img { 
+            display: block; 
+            margin: 0 auto 10px; 
+        } 
+ 
+        .header-container h1, .header-container h2 { 
+            margin: 5px 0; 
+        } 
+ 
+         
+ 
+ 
+ 
+ 
+ 
+/* Navigation/Menu Bar */ 
+        .center-nav { 
+            background-color: rgb(158, 53, 11); 
+            color: white; 
+            padding: 10px 0; 
+            text-align: left; 
+            margin-bottom: 20px; 
+            display: flex; 
+            align-items: center; 
+        } 
+ 
+        .center-nav h3 { 
+            margin: 0; 
+            padding: 0 20px; 
+            font-weight: normal; 
+        } 
+ 
+        .vertical-separator { 
+            border-left: 3px solid white; /* Changed color for visibility on blue */ 
+            height: 20px; 
+        } 
+         
+        /* Form Container and Sections */ 
+        .box { 
+            border: 2px solid black; 
+            padding: 10px; 
+            background-color: white; 
+            max-width: 800px; 
+            margin: 0 auto; 
+        } 
+ 
+        .form-section-header { 
+            color: rgb(54, 65, 218); 
+            margin-top: 20px; 
+            margin-bottom: 10px; 
+        } 
+ 
+         
+ 
+ 
+ 
+.row-info { 
+            background-color: #ffffed; 
+            color: red; 
+            padding: 10px; 
+            margin-bottom: 15px; 
+            font-size: 14px; 
+        } 
+ 
+        .form-group { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; /* Center the form fields */ 
+            margin-bottom: 15px; 
+        } 
+         
+        /* Input and Label Styling */ 
+        label { 
+            display: inline-block; 
+            width: 180px; /* Increased width for better alignment */ 
+            text-align: right; 
+            margin-right: 15px; 
+            font-weight: bold; 
+        } 
+ 
+        input[type="text"],  
+        input[type="number"],  
+        input[type="date"], 
+        input[type="email"], 
+        input[type="tel"], 
+        input[type="password"], 
+        select { 
+            padding: 8px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            width: 250px; 
+        } 
+         
+        
+ 
+ 
+ 
+ input[type="radio"] { 
+            margin-right: 5px; 
+        } 
+ 
+        .radio-group { 
+            display: flex; 
+            align-items: center; 
+            width: 250px; 
+        } 
+ 
+        .radio-group label { 
+            width: auto; 
+            margin-right: 15px; 
+            font-weight: normal; 
+        } 
+         
+        em { 
+            display: block; 
+            text-align: center; 
+            margin-bottom: 15px; 
+            font-style: italic; 
+        } 
+ 
+        /* Submit Button */ 
+        input[type="submit"] { 
+            background-color: green; 
+            color: white; 
+            padding: 10px 20px; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            font-size: 16px; 
+            margin-top: 20px; 
+        } 
+ 
+        input[type="submit"]:hover { 
+            background-color: darkgreen; 
+        } 
+ 
+ 
+ 
+    </style> 
+</head> 
+<body> 
+ 
+    <header class="header-container"> 
+        <img src="OIP 2.webp" alt="National Logo" width="100" height="100"> 
+        <h1 style="color: black;">NATIONAL EDUCATION SOCIETY FOR TRIBAL 
+STUDENTS</h1> 
+        <h2>EMRS STAFF SELECTION EXAMINATION-2025</h2> 
+    </header> 
+ 
+    <div class="center-nav"> 
+        <h3>HOME</h3> 
+        <div class="vertical-separator"></div> 
+    </div> 
+ 
+    <form action="#" method="post"> 
+        <div class="box"> 
+             
+            <h3 class="form-section-header">PERSONAL DETAILS</h3> 
+            <div class="row-info"> 
+                Please fill details as printed on Class 10th passing certificate/marksheet issued 
+by recognized school examination board 
+            </div> 
+            <hr> 
+ 
+            <div class="form-group"> 
+                <label for="candidate-name">Candidate Name</label> 
+                <input type="text" id="candidate-name" name="candidate_name" required> 
+            </div> 
+ 
+            <div class="form-group"> 
+                <label for="fathers-name">Father's Name</label> 
+                <input type="text" id="fathers-name" name="fathers_name" required> 
+            </div> 
+ 
+          
+ 
+ 
+ 
+ 
+   <div class="form-group"> 
+                <label for="mothers-name">Mother's Name</label> 
+                <input type="text" id="mothers-name" name="mothers_name" required> 
+            </div> 
+ 
+            <div class="form-group"> 
+                <label for="birth-date">Birth Date</label> 
+                <input type="date" id="birth-date" name="birth_date" required> 
+            </div> 
+ 
+            <div class="form-group"> 
+                <label for="gender-male">Gender</label> 
+                <div class="radio-group"> 
+                    <input type="radio" id="gender-male" name="gender" value="Male" 
+required> 
+                    <label for="gender-male">Male</label> 
+                     
+                    <input type="radio" id="gender-female" name="gender" value="Female"> 
+                    <label for="gender-female">Female</label> 
+                </div> 
+            </div> 
+ 
+            <div class="form-group"> 
+                <label for="identity-type">Identity Type</label> 
+                <select id="identity-type" name="identity_type" required> 
+                    <option value="">-- Select --</option> 
+                    <option value="aadhar">Aadhar Card</option> 
+                    <option value="pan">PAN Card</option> 
+                    <option value="e-aadhar">E-Aadhar</option> 
+                    <option value="college-id">College ID</option> 
+                    <option value="passport">Passport</option> 
+                    <option value="voter-id">Voter ID</option> 
+                </select> 
+            </div> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            <div class="form-group"> 
+                <label for="identification-number">Identification Number</label> 
+                <input type="text" id="identification-number" name="identification_number" 
+required> 
+            </div> 
+             
+             
+            <h3 class="form-section-header">PRESENT ADDRESS</h3> 
+            <hr> 
+             
+            <div class="form-group"> 
+                <label for="house-no">House No./Flat No.</label> 
+                <input type="text" id="house-no" name="house_no" required> 
+            </div> 
+ 
+            <div class="form-group"> 
+                <label for="sub-locality">Sub Locality (optional)</label> 
+                <input type="text" id="sub-locality" name="sub_locality"> 
+            </div> 
+ 
+            <div class="form-group"> 
+                <label for="locality">Locality</label> 
+                <input type="text" id="locality" name="locality" required> 
+            </div> 
+ 
+            <div class="form-group"> 
+                <label for="country">Country</label> 
+                <select id="country" name="country" required> 
+                    <option value="">-- Select --</option> 
+                    <option value="india">India</option> 
+                    <option value="america">America</option> 
+                    <option value="france">France</option> 
+                    <option value="africa">Africa</option> 
+                </select> 
+            </div> 
+ 
+         
+ 
+ 
+ 
+ 
+    <div class="form-group"> 
+                <label for="state">State</label> 
+                <select id="state" name="state" required> 
+                    <option value="">-- Select --</option> 
+                    <option value="karnataka">Karnataka</option> 
+                    <option value="maharashtra">Maharashtra</option> 
+                    <option value="punjab">Punjab</option> 
+                    <option value="assam">Assam</option> 
+                </select> 
+            </div> 
+ 
+            <div class="form-group"> 
+                <label for="district">District</label> 
+                <select id="district" name="district" required> 
+                    <option value="">-- Select --</option> 
+                    <option value="d1">District 1</option> 
+                    <option value="d2">District 2</option> 
+                    <option value="d3">District 3</option> 
+                    <option value="d4">District 4</option> 
+                </select> 
+            </div> 
+ 
+            <div class="form-group"> 
+                <label for="pincode">Pin code</label> 
+                <input type="text" id="pincode" name="pincode" pattern="\d{6}" title="Six 
+digit pin code" required> 
+            </div> 
+             
+            <h3 class="form-section-header">ELECTRONIC COMMUNICATION 
+ADDRESS</h3> 
+            <hr> 
+             
+            <em>Please **correct** Email id and Mobile Number as OTP will be shared on 
+these for verification</em> 
+ 
+            <div class="form-group"> 
+                <label for="email-address">Email Address</label> 
+                <input type="email" id="email-address" name="email_address" required> 
+            </div> 
+ 
+ 
+            <div class="form-group"> 
+                <label for="confirm-email">Confirm Email Address</label> 
+                <input type="email" id="confirm-email" name="confirm_email" required> 
+            </div> 
+ 
+            <div class="form-group"> 
+                <label for="mobile-number">Mobile Number</label> 
+                <input type="tel" id="mobile-number" name="mobile_number" pattern="[0-9]{10}" title="10 digit mobile number" required> 
+            </div> 
+ 
+            <div class="form-group"> 
+                <label for="landline-no">Land Line No. with STD code (optional)</label> 
+                <input type="tel" id="landline-no" name="landline_no" placeholder="e.g., 011
+23456789"> 
+            </div> 
+ 
+            <h3 class="form-section-header">CHOOSE PASSWORD</h3> 
+            <hr> 
+ 
+            <div class="form-group"> 
+                <label for="password">Password</label> 
+                <input type="password" id="password" name="password" required> 
+            </div> 
+ 
+            <div class="form-group"> 
+                <label for="confirm-password">Confirm Password</label> 
+                <input type="password" id="confirm-password" name="confirm_password" 
+required> 
+            </div> 
+ 
+            <div class="form-group"> 
+                <label for="security-question">Security Question</label> 
+                <select id="security-question" name="security_question" required> 
+                    <option value="">-- Select --</option> 
+                    <option value="sport">Favourite Sport</option> 
+                    <option value="sleep">Sleep Time</option> 
+                    <option value="college">College Time</option> 
+                   
+ 
+ 
+  <option value="dob-month">Month of Birth</option> 
+                </select> 
+            </div> 
+ 
+            <div class="form-group"> 
+                <label for="security-answer">Security Answer</label> 
+                <input type="text" id="security-answer" name="security_answer" required> 
+            </div> 
+             
+            <h3 class="form-section-header">CAPTCHA</h3> 
+            <hr> 
+ 
+            <div class="form-group" style="justify-content: center; margin-bottom: 5px;"> 
+                <label style="width: auto; margin-right: 10px;">**XmNf**</label>  
+                </div> 
+ 
+            <div class="form-group"> 
+                <label for="captcha-input">Enter CAPTCHA as shown above (case 
+sensitive)</label> 
+                <input type="text" id="captcha-input" name="captcha_input" required> 
+            </div> 
+ 
+            <div class="form-group" style="justify-content: center; margin-top: 30px;"> 
+                <input type="submit" value="Submit"> 
+            </div> 
+             
+        </div> 
+    </form> 
+ 
+</body> 
+</html>

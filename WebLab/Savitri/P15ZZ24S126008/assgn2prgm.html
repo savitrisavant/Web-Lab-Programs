@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Audio and Video Player</title>
+<style>
+body {
+ margin: 0;
+ padding: 30px;
+ font-family: Arial, sans-serif;
+ background: linear-gradient(135deg, rgb(122, 168, 255), rgb(179, 236, 247), pink, rgb(13, 197, 126));
+ min-height: 90vh;
+ text-align: center;
+}
+h2 {
+ color: #2c2c2c;
+ margin-top: 25px;
+ margin-bottom: 10px;
+}
+.container {
+ width: 50%; 
+ margin: auto;
+ padding: 25px;
+ background: linear-gradient(145deg, #ffffff, #f0f8ff);
+ border-radius: 15px;
+ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+img,
+audio,
+video {
+ display: block;
+ width: 90%;
+ margin: 15px auto;
+ border-radius: 10px;
+ outline: none;
+}
+</style>
+</head>
+<body>
+<div class="container">
+ <h2>Image</h2>
+ <img src="nature1.jpg" alt="nature Image" />
+ <h2>Audio Player</h2>
+ <audio controls>
+ <source src="ILAHI - SLOWED & REVERB.mp3" type="audio/mpeg" />
+ Your browser does not support the audio element.
+ </audio> 
+ <h2>Video Player</h2>
+ <video controls>
+ <source src="video.mp4" type="video/mp4" />
+ Your browser does not support the video element.
+ </video>
+</div>
+</body>
+</html>

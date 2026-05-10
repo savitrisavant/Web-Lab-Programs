@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Display Current Date</title>
+<script>
+function showDate() {
+  today = new Date();
+  document.getElementById("datePara").innerHTML = "Current Date: " + today;
+}
+</script>
+</head>
+<body onload="showDate()" style="text-align:center; margin-top:40px; background-color:rgb(254, 203, 225);">                   
+<h2>Current Date Display</h2>
+<!-- Paragraph where the date will appear -->
+<p id="datePara" style="font-size:20px;"></p>
+</body>
+</html>

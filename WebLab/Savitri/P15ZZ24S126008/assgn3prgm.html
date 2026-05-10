@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Canvas Hexagon</title> 
+</head> 
+ 
+<body style="text-align:center; background:#8eeb85;"> 
+    <h1>Canvas Hexagon</h1> 
+ 
+    <canvas id="myCanvas" width="300" height="250" 
+        style="border:2px solid #93f391; background:#ffffff;"> 
+    </canvas> 
+ 
+    <script> 
+        // Get the canvas element and its context 
+        var canvas = document.getElementById("myCanvas"); 
+        var ctx = canvas.getContext("2d"); 
+ 
+        // Draw a hexagon 
+        ctx.beginPath(); 
+ 
+        var centerX = 150; 
+        var centerY = 125; 
+        var radius = 100; 
+        var sides = 6; 
+        var angleStep = (2 * Math.PI) / sides; 
+ 
+        // Move to first point 
+        ctx.moveTo( 
+            centerX + radius * Math.cos(0), 
+            centerY + radius * Math.sin(0) 
+        ); 
+ 
+ 
+ 
+ 
+        // Draw the other sides 
+        for (var i = 1; i <= sides; i++) { 
+            ctx.lineTo( 
+                centerX + radius * Math.cos(i * angleStep), 
+                centerY + radius * Math.sin(i * angleStep) 
+            ); 
+        } 
+ 
+        ctx.closePath(); 
+ 
+        /* Decent colors */ 
+        ctx.fillStyle = "rgba(204, 204, 153, 0.6)";   // soft blue 
+        ctx.strokeStyle = "#1e3a8a";                 // deep blue border 
+        ctx.lineWidth = 3; 
+ 
+        ctx.fill(); 
+        ctx.stroke(); 
+    </script> 
+</body> 
+</html>

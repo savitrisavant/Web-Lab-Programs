@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouseover Color Change</title>
+    <script>
+        // This function changes the paragraph text color to red
+        function changeColor() {
+            document.getElementById("myPara").style.color = "red";       
+        }
+                                                                         
+        function resetColor() {
+            document.getElementById("myPara").style.color = "black";
+        }
+    </script>
+</head>
+<body style="text-align:center; margin-top:50px; background-color:#E8D5F2;font-size:30px;">
+    <h2>Mouseover</h2>
+    <!-- Paragraph with events -->
+    <p id="myPara" onmouseover="changeColor()" onmouseout="resetColor()" style="font-size:25px; cursor:default;">
+        Hover the mouse over this text to visualize the change its color using MouseEvents.
+</body>
+</html>

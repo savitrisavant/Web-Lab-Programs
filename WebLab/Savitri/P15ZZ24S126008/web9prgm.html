@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Sum of Two Numbers</title>
+<script>
+function addNumbers(){
+  const num1=parseFloat(document.getElementById("number1").value);
+  const num2=parseFloat(document.getElementById("number2").value);
+  //calculate the sum
+  const sum=num1+num2;
+  //display the result
+  document.getElementById("result").textContent="Sum: "+sum;
+}
+</script>
+</head>
+<body style="background-color: rgb(255, 196, 239);">
+<h1>Calculate the Sum of Two Numbers</h1>
+<form onsubmit="event.preventDefault();addNumbers();">
+  <label for="number1">Number 1:</label>
+  <input type="number" id="number1" required>
+  <br><br>
+  <label for="number2">Number 2:</label>
+  <input type="number" id="number2" required>
+  <br><br>
+  <button type="submit" style="background-color: hsl(34, 92%, 53%) ; color:#fff; width: 120px; height: 30px;">Calculate Sum</button>                            
+</form>
+<h2 id="result"></h2>
+</body>
+</html>
